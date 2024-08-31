@@ -8,11 +8,11 @@ git add .
 :: Confirma los cambios
 git commit -m %commit_message%
 
+:: Realiza un pull para integrar cambios remotos
+git pull origin master
+
 :: Sube los cambios al repositorio remoto
 git push origin master
-
-:: Opción para un branch específico
-:: git push origin tu_rama
 
 echo Actualización subida exitosamente.
 pause
