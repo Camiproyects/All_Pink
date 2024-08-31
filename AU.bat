@@ -8,8 +8,8 @@ git add .
 :: Confirma los cambios
 git commit -m %commit_message%
 
-:: Realiza un pull para integrar cambios remotos
-git pull origin master
+:: Realiza un pull con --allow-unrelated-histories
+git pull origin master --allow-unrelated-histories
 
 :: Sube los cambios al repositorio remoto
 git push origin master
