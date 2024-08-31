@@ -9,7 +9,7 @@ git add .
 git commit -m %commit_message%
 
 :: Sube los cambios al repositorio remoto
-git push origin main
+git push origin master
 
 :: Opción para un branch específico
 :: git push origin tu_rama
