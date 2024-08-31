@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Matriz.css">
+    <title>Consulta de Promedios</title>
+    <script src="Matriz.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Promedios de Notas</h1>
+        <label for="idInput">Número de Identificación:</label>
+        <input type="text" id="IDEntrada"><br><br>
+        <button onclick="Consulta()">Consultar</button>
+
+        <table id="ResultadoTabla" style="display: none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Carrera</th>
+                    <th>Nota# , 1</th>
+                    <th>Nota# , 2</th>
+                    <th>Nota# , 3</th>
+                    <th>Nota# , 4</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody id="ResultadoCuerpo">
+            </tbody>
+        </table>
+        <p id="SinResultado" class="no-data" style="display: none;">No se encontraron datos para el ID proporcionado.</p>
+    </div>
+</body>
+</html>
